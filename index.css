@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+h1 {
+    color:purple;
+}
+#output {
+    /*margin-top: -1vh;*/
+    background-color: #c276c2;
+    height: 8vh;
+    width: 78vw;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 400%;
+}
+#container {
+    cursor: pointer;
+    margin: 4vh;
+    background-color: rgba(128, 0, 128, 0.2);
+    padding: 5vh;
+    border-radius: 15px;
+}
+#one{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    font-weight: bold;
+    width: 60vw;
+}
+#two input{
+    width: 60vw;
+    accent-color: purple;
+}
+#seven{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+button{
+    border-radius: 2px;
+}
