@@ -12,20 +12,29 @@ h1 {
 #output {
     /*margin-top: -1vh;*/
     background-color: #c276c2;
-    height: 8vh;
-    width: 78vw;
-    border-radius: 15px;
+    height: 4vh;
+    width: 30vw;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    font-size: 400%;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding: 1vh;
+}
+#output p {
+
+    margin-left: 5%;
+}
+#output img {
+    margin-right: 1vw ;
+    height:4vh;
+    width:3vw
 }
 #container {
     cursor: pointer;
     margin: 4vh;
     background-color: rgba(128, 0, 128, 0.2);
-    padding: 5vh;
+    padding: 1vh;
+    width: 30vw;
     border-radius: 15px;
 }
 #one{
@@ -33,16 +42,24 @@ h1 {
     justify-content: space-between;
     margin-top: 10%;
     font-weight: bold;
-    width: 60vw;
+    width: 30vw;
 }
 #two input{
-    width: 60vw;
+    width: 30vw;
     accent-color: purple;
 }
 #seven{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-weight: bold;
+}
+#seven div{
+    height: 2vw;
+    width: 2vw;
+    border-radius: 50%;
+    border: black solid 1px;
+    background-color: ghostwhite;
 }
 button{
     border-radius: 2px;

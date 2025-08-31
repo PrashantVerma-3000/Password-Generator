@@ -6,7 +6,9 @@ let sym = document.querySelector('#symbol');
 let but = document.querySelector('button');
 let range = document.querySelector('#password');
 let span = document.querySelector('span');
-let output = document.querySelector('#output');
+let output = document.querySelector('p');
+let img = document.querySelector('img');
+let strength = document.querySelector('#seven div');
 function handlecheck(event){
     if(event.target.checked){
         if(event.target.id=='uppercase'){
@@ -53,6 +55,26 @@ function generatePassword(){
         let len = arr[index].length;
         password = password + arr[index][Math.floor(Math.random()*len)];
     }
+    if(password.length<7){
+        strength.style.background="red";
+    }else if(password.length<14){
+        strength.style.background="yellow";
+    }else{
+        strength.style.background="green";
+    }
     output.innerText = password;
 }
 but.addEventListener('click',generatePassword);
+function copyToClipboard(){
+    if(output.innerText==""){
+        alert("Please Generate Password First");
+        return;
+    }
+    let text = output.innerText;
+    navigator.clipboard.writeText(text).then(() => {
+        alert("Copied: " + text);
+    }).catch(err => {
+        console.error("Failed to copy: ", err);
+    });
+}
+img.addEventListener('click',copyToClipboard);
